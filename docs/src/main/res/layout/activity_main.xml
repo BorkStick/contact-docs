@@ -1,0 +1,105 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabCreator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Contact Creator"
+                        android:id="@+id/CreatorTitle"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:longClickable="false" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txtName"
+                        android:layout_marginTop="15dp"
+                        android:hint="Contact Name" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:id="@+id/txtPhone"
+                        android:layout_marginTop="15dp"
+                        android:hint="Phone Number" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:id="@+id/txtEmail"
+                        android:layout_marginTop="15dp"
+                        android:hint="Email"
+                        android:layout_gravity="center_horizontal" />
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/txtAddress"
+                        android:layout_marginTop="15dp"
+                        android:hint="Address"
+                        android:layout_gravity="center_horizontal"
+                        android:inputType="textPostalAddress" />
+
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Add Contact"
+                        android:id="@+id/btnAdd"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabContactStore"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"></LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
